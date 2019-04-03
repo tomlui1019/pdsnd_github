@@ -184,18 +184,18 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        individual = input('\nWould you like to view individual trip data?\n').lower()
+        individual = input('\nWould you like to view individual trip data? | (e.g. if yes, enter [yes] or [y])\n').lower()
         if individual in ('yes','y'):
             i = 0
             while True:
                 print(df.iloc[i:i+5])
                 i += 5
-                more_data = input('Would you like to see moredata?\n').lower()
+                more_data = input('Would you like to see more data? | (e.g. if yes, enter [yes] or [y])\n').lower()
                 if more_data not in ('yes', 'y'):
                     break
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? | (e.g. if yes, enter [yes] or [y]) \n')
+        if restart.lower() not in ('yes','y'):
             break
 
 
