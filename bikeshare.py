@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input("which city shall we analyze\n").lower()
+        city = input("which city shall we analyze | (e.g. chicago, new york city, washington)\n").lower()
         if city not in ('chicago', 'new york city', 'washington'):
             print("please enter either chicago, new york city or washington\n")
         else:
@@ -28,15 +28,15 @@ def get_filters():
     while True:
         month = input("which month shall we analyze? | (e.g. for january, please input [1])\n").lower()
         if month not in ('1','2','3','4','5','6'):
-            print ("please enter the correct input. | (e.g. for january, please input [1])\n")
+            print ("please enter the correct input. | (e.g. for january, please input [1]])\n")
         else:
             break
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("which day of week shall we analyze?\n").lower()
+        day = input("which day of week shall we analyze? | (e.g. for monday, you may [monday])\n").lower()
         if day not in ('monday','tuesday','wednesday','thursday','friday','saturday','sunday'):
-            print ("please enter the correct input.\n")
+            print ("please enter the correct input.| (e.g. for monday, you may input [monday] \n")
         else:
             break
 
@@ -193,7 +193,7 @@ def main():
                 more_data = input('Would you like to see moredata?\n').lower()
                 if more_data not in ('yes', 'y'):
                     break
-                    
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
