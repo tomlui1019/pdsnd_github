@@ -11,4 +11,4 @@ Refactoring and Make Required Changes
 Include the files used
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Just giving credits to myself for completing this course
